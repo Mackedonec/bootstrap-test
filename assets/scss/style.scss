@@ -1,13 +1,2 @@
 @use 'normalize';
 @use 'common';
-
-div>span {
-    display: block;
-    background-color: red;
-    font-size: 30px;
-    text-align: center;
-    height: 100px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    color: white;
-}
