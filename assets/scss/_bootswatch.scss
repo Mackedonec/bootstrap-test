@@ -10,7 +10,7 @@ $web-font-path: "https://fonts.googleapis.com/css?family=Neucha|Cabin+Sketch&dis
 }
 
 // stylelint-disable scss/dollar-variable-default
-$border-radius-sketchy:    255px 25px 225px 25px / 25px 225px 25px 255px;
+$border-radius-sketchy: 255px 25px 225px 25px / 25px 225px 25px 255px;
 $border-radius-lg-sketchy: 55px 225px 15px 25px / 25px 25px 35px 355px;
 $border-radius-sm-sketchy: 255px 25px 225px 25px / 25px 225px 25px 255px;
 // style-enable scss/dollar-variable-default
@@ -22,8 +22,8 @@ $border-radius-sm-sketchy: 255px 25px 225px 25px / 25px 225px 25px 255px;
 // Navbar
 
 .navbar {
-  border-style: solid;
   border-width: 2px;
+  border-style: solid;
   border-radius: 25px 25px 55px 5px/5px 55px 25px 25px;
 
   &.bg-light {
@@ -41,9 +41,10 @@ $border-radius-sm-sketchy: 255px 25px 225px 25px / 25px 225px 25px 255px;
   }
 
   &-brand {
+    text-decoration: none;
+
     font-family: $headings-font-family;
     font-weight: 400;
-    text-decoration: none;
   }
 }
 
@@ -51,6 +52,7 @@ $border-radius-sm-sketchy: 255px 25px 225px 25px / 25px 225px 25px 255px;
 
 .btn {
   text-decoration: none;
+
   border-radius: $border-radius-sketchy;
 
   &-lg {
@@ -64,6 +66,7 @@ $border-radius-sm-sketchy: 255px 25px 225px 25px / 25px 225px 25px 255px;
 
 .btn-check {
   display: inline-block;
+
   opacity: 0;
 }
 
@@ -97,10 +100,12 @@ table {
 
 .table-bordered {
   overflow: hidden;
+
   border-spacing: 0;
+
   border-collapse: separate;
-  background-color: $gray-800;
   border-radius: 5px 25px 5px 25px/25px 5px 25px 5px;
+  background-color: $gray-800;
 
   th,
   td {
@@ -171,36 +176,47 @@ select.form-control {
 
 [type="checkbox"] {
   position: relative;
+
   width: 0;
   height: 0;
+
   cursor: pointer;
+
   border: none;
+
   appearance: none;
 
   &::before {
     position: absolute;
-    top: -.1em;
+    top: -0.1em;
     left: 0;
+
     display: inline-block;
+
     width: 15px;
     height: 16px;
+
     content: "";
+
     border: 2px solid $gray-800;
     border-radius: 2px 8px 2px 4px / 5px 3px 5px 3px;
   }
 
   &:focus::before {
-    box-shadow: 0 0 0 .25rem rgba(51, 51, 51, .25);
+    box-shadow: 0 0 0 0.25rem rgba(51, 51, 51, 0.25);
   }
 
   &:checked::after {
     position: absolute;
     top: 0;
-    left: .1em;
-    font-size: 1.5rem;
-    line-height: .5;
-    color: $gray-800;
+    left: 0.1em;
+
     content: "x";
+
+    color: $gray-800;
+
+    font-size: 1.5rem;
+    line-height: 0.5;
   }
 
   &:disabled {
@@ -212,26 +228,34 @@ select.form-control {
 
 [type="radio"] {
   position: relative;
+
   width: 0;
   height: 0;
+
   cursor: pointer;
+
   border: none;
+
   appearance: none;
 
   &::before {
     position: absolute;
-    top: -.1em;
+    top: -0.1em;
     left: 0;
+
     display: inline-block;
+
     width: 16px;
     height: 16px;
+
     content: "";
+
     border: 2px solid $gray-800;
     border-radius: 50% 45% 40% 50% / 40% 50% 50% 45%;
   }
 
   &:focus::before {
-    box-shadow: 0 0 0 .25rem rgba(51, 51, 51, .25);
+    box-shadow: 0 0 0 0.25rem rgba(51, 51, 51, 0.25);
   }
 
   &:checked::before {
@@ -256,10 +280,12 @@ select.form-control {
 
   .form-check-input {
     position: relative;
+
     margin-left: 0;
 
     &::before {
       width: 32px;
+
       border-radius: 30% 35% 30% 30% / 30% 50% 30% 45%;
     }
 
@@ -267,25 +293,30 @@ select.form-control {
       position: absolute;
       top: 0;
       left: 0;
+
       display: inline-block;
+
       width: 12px;
       height: 12px;
+
       content: "";
-      background-color: $white;
-      border: 2px solid #333;
+      transition: left 0.15s ease-in-out;
+
+      border: 2px solid #333333;
       border-radius: 50% 45% 40% 50% / 40% 50% 50% 45%;
-      transition: left .15s ease-in-out;
+      background-color: $white;
     }
 
     &:checked::after {
       top: 0;
       left: 18px;
+
       background-color: $gray-800;
     }
   }
 
   .form-check-label {
-    margin-left: .5em;
+    margin-left: 0.5em;
   }
 }
 
@@ -293,6 +324,7 @@ select.form-control {
 
 .dropdown-menu {
   overflow: hidden;
+
   border-radius: 555px 25px 25px 25px/25px 25px 25px 555px;
 }
 
@@ -302,9 +334,10 @@ select.form-control {
 
 .list-group {
   overflow: hidden;
-  background-color: $gray-800;
+
   border: 2px solid $gray-800;
   border-radius: 45px 15px 35px 5px/15px 5px 15px 65px;
+  background-color: $gray-800;
 
   &-item {
     border-top: 2px solid $gray-800;
@@ -426,6 +459,7 @@ select.form-control {
 
 .popover {
   padding: 0;
+
   border-radius: 45px 85px 15px 25px/15px 10px 35px 555px;
 
   &-title {
@@ -469,8 +503,9 @@ pre {
 
   &::before {
     position: absolute;
-    top: .8rem;
+    top: 0.8rem;
     right: 1rem;
+
     content: "X";
   }
 }
