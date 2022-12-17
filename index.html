@@ -84,11 +84,9 @@
               </ul>
             </li>
           </ul>
-
         </div>
       </div>
     </nav>
-
   </header>
 
   <main class="pt-5 bg-dark text-white" style="--bs-bg-opacity: .85;">
@@ -152,7 +150,6 @@
             </button>
           </div>
 
-
           <h2 class="py-2">Carousel #2</h2>
 
           <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
@@ -182,11 +179,11 @@
             </button>
           </div>
 
-
         </div>
         <div class="col-xxl-5 col-xl-7 col-lg-6  bg-dark p-3 my-3">
 
           <h2 class="pb-2">Accordion</h2>
+
           <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptate corrupti accusantium,
               fugit sapiente sint eaque architecto, fuga a incidunt veritatis corporis inventore sed distinctio
               illo earum adipisci, rerum recusandae?</span><span>Dolorem culpa unde earum sequi ipsam nemo
@@ -198,7 +195,6 @@
               cupiditate unde, reprehenderit dignissimos quam asperiores velit neque necessitatibus ab quaerat
               fugit? Consectetur repellendus natus voluptatum asperiores exercitationem, earum facilis deserunt
               ipsam?</span></p>
-
           <div class="accordion" id="accordionFlushExample">
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingOne">
@@ -274,6 +270,7 @@
             </div>
 
             <h2 class="p-2"> Added accordion items</h2>
+
             <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptate corrupti accusantium,
                 fugit sapiente sint eaque architecto, fuga a incidunt veritatis corporis inventore sed distinctio
                 illo earum adipisci, rerum recusandae?</span><span>Dolorem culpa unde earum sequi ipsam nemo
@@ -285,7 +282,6 @@
                 cupiditate unde, reprehenderit dignissimos quam asperiores velit neque necessitatibus ab quaerat
                 fugit? Consectetur repellendus natus voluptatum asperiores exercitationem, earum facilis deserunt
                 ipsam?</span></p>
-
             <div class="accordion-item">
               <h2 class="accordion-header" id="flush-headingFour">
                 <button class="accordion-button collapsed bg-secondary text-light" type="button"
@@ -329,13 +325,16 @@
                 </div>
               </div>
             </div>
-
           </div>
-
-
 
         </div>
         <div class="col-xxl-3 col-xl-5 col-lg-6 bg-dark p-3 my-3" style="--bs-bg-opacity: .35;">
+
+          <h2 class="mx-2 p-1">Modal button</h2>
+          <button type="button" class="btn btn-secondary mx-2 my-3" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">
+            Sing in
+          </button>
 
           <form action="https://tests.fomenko.top/echo/index.php" method="get">
 
@@ -349,7 +348,13 @@
                 </div>
               </div>
               <div class="row mx-1 mb-3">
-                <label for="inputEmail3" class="col-form-label">Login</label>
+                <label for="inputName3" class="col-form-label">Name</label>
+                <div class="col-6">
+                  <input type="text" class="form-control" id="inputName3" placeholder="Name">
+                </div>
+              </div>
+              <div class="row mx-1 mb-3">
+                <label for="inputLogin3" class="col-form-label">Login</label>
                 <div class="col-6">
                   <input type="text" class="form-control" id="inputLogin3" placeholder="Login">
                 </div>
@@ -360,7 +365,6 @@
                   <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
                 </div>
               </div>
-
               <fieldset class="row mx-0 my-3">
                 <legend class="col-form-label col-auto pt-0 ">Radios</legend>
                 <div class="row mb-2">
@@ -431,10 +435,10 @@
                 </div>
               </fieldset>
               <fieldset>
-                <label for="Textarea" class="m-2 px-2">About you</label>
-                <div class="Textarea m-0 p-2">
-                  <textarea class="form-control" placeholder="Leave a massage here" id="Textarea"
-                    style="height: 100px"></textarea>
+                <label for="Textarea2" class="m-2 px-2">About you</label>
+                <div class="form m-0 p-2">
+                  <textarea class="form-control" placeholder="Leave a massage here" id="Textarea2"
+                    style="height: 200px"></textarea>
                 </div>
               </fieldset>
               <div class="mx-2 p-1">
@@ -443,15 +447,10 @@
               </div>
             </fieldset>
           </form>
-
-
-
         </div>
       </div>
     </div>
-
   </main>
-
 
   <footer class="p-5 bg-dark text-white" style="--bs-bg-opacity: .85;">
     <div class="container-fluid">
@@ -466,6 +465,39 @@
     </div>
   </footer>
 
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-secondary">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-black text-light">
+          <form action="https://tests.fomenko.top/echo/index.php" method="get">
+            <fieldset class="border border-secondary p-1">
+              <div class="row mx-1 mb-3">
+                <label for="inputLogin" class="col-form-label">Login</label>
+                <div class="col-6">
+                  <input type="text" class="form-control" id="inputLogin" placeholder="Login">
+                </div>
+              </div>
+              <div class="row mx-1 mb-3">
+                <label for="inputPassword" class="col-form-label">Password</label>
+                <div class="col-6">
+                  <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+                </div>
+              </div>
+              <div class="mx-2 p-1">
+                <button type="reset" class="btn btn-secondary mx-1">Reset</button>
+                <button type="submit" class="btn btn-secondary">Sing in</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
   <script src="assets/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
 </body>
