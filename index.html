@@ -98,6 +98,8 @@
       <div class="row">
         <div class="col-xxl-4 col-xl-12 bg-dark p-1 my-3" style="--bs-bg-opacity: .35;">
 
+          <h2 class="py-2">Carousel #1</h2>
+
           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
@@ -151,8 +153,38 @@
             </button>
           </div>
 
+
+          <h2 class="py-2">Carousel #2</h2>
+
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="3000">
+                <img src="assets/img/carousel/img1.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="assets/img/carousel/img2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img src="assets/img/carousel/img3.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
         </div>
-        <div class="col-xxl-5 col-xl-7 col-lg-6  bg-dark p-5 my-3">
+        <div class="col-xxl-5 col-xl-7 col-lg-6  bg-dark p-3 my-3">
+
+          <h2 class="pb-2">Accordion #1</h2>
 
           <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
@@ -232,86 +264,110 @@
 
 
         </div>
-        <div class="col-xxl-3 col-xl-5 col-lg-6 bg-dark p-5 my-3" style="--bs-bg-opacity: .35;">
+        <div class="col-xxl-3 col-xl-5 col-lg-6 bg-dark p-3 my-3" style="--bs-bg-opacity: .35;">
           <form>
-            <div class="row mx-1 mb-3">
-              <label for="inputEmail3" class="col-form-label">Email</label>
-              <div class="col-11">
-                <input type="email" class="form-control bg-secondary" id="inputEmail3">
-              </div>
-            </div>
-            <div class="row mx-1 mb-3">
-              <label for="inputEmail3" class="col-form-label">Login</label>
-              <div class="col-11">
-                <input type="text" class="form-control bg-secondary" id="inputLogin3">
-              </div>
-            </div>
-            <div class="row mx-1 mb-3">
-              <label for="inputPassword3" class="col-form-label">Password</label>
-              <div class="col-11">
-                <input type="password" class="form-control bg-secondary" id="inputPassword3">
-              </div>
-            </div>
-            <div class="btn mx-2 p-1">
-              <button type="reset" class="btn btn-secondary mx-1">Reset</button>
-              <button type="submit" class="btn btn-secondary">Registration</button>
-            </div>
-
-            <fieldset class="row mx-0 my-3">
-              <legend class="col-form-label col-auto pt-0 ">Radios</legend>
-              <div class="row mb-2">
-                <div class="col-auto">
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
-                      checked>
-                    <label class="form-check-label " for="gridRadios1">
-                      First radio
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
-                    <label class="form-check-label" for="gridRadios2">
-                      Second radio
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
-                    <label class="form-check-label" for="gridRadios3">
-                      Third radio
-                    </label>
-                  </div>
+            <legend>Registration</legend>
+            <fieldset class="border border-secondary p-1">
+              <div class="row mx-1 mb-3">
+                <label for="inputEmail3" class="col-form-label">Email</label>
+                <div class="col-11">
+                  <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
                 </div>
               </div>
-            </fieldset>
-            <fieldset class="row mx-0">
-              <legend class="col-form-label col-auto pt-0">Checkbox</legend>
-              <div class="row mb-2">
-                <div class="col-auto">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck1">
-                    <label class="form-check-label" for="gridCheck1">
-                      Checkbox
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck2">
-                    <label class="form-check-label" for="gridCheck2">
-                      Checkbox
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck3">
-                    <label class="form-check-label" for="gridCheck3">
-                      Checkbox
-                    </label>
-                  </div>
+              <div class="row mx-1 mb-3">
+                <label for="inputEmail3" class="col-form-label">Login</label>
+                <div class="col-11">
+                  <input type="text" class="form-control" id="inputLogin3" placeholder="Login">
                 </div>
               </div>
-            </fieldset>
-            <div class="btn mx-3 p-1">
-              <button type="submit" class="btn btn-secondary mx-1">Sign in</button>
-            </div>
+              <div class="row mx-1 mb-3">
+                <label for="inputPassword3" class="col-form-label">Password</label>
+                <div class="col-11">
+                  <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                </div>
+              </div>
 
+              <fieldset class="row mx-0 my-3">
+                <legend class="col-form-label col-auto pt-0 ">Radios</legend>
+                <div class="row mb-2">
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                        checked>
+                      <label class="form-check-label " for="gridRadios1">
+                        First radio
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <label class="form-check-label" for="gridRadios2">
+                        Second radio
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+                      <label class="form-check-label" for="gridRadios3">
+                        Third radio
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset class="row mx-0">
+                <legend class="col-form-label col-auto pt-0">Checkbox</legend>
+                <div class="row mb-2">
+                  <div class="col-auto">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck1">
+                      <label class="form-check-label" for="gridCheck1">
+                        Checkbox
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck2">
+                      <label class="form-check-label" for="gridCheck2">
+                        Checkbox
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck3">
+                      <label class="form-check-label" for="gridCheck3">
+                        Checkbox
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck4">
+                      <label class="form-check-label" for="gridCheck4">
+                        Checkbox
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck5">
+                      <label class="form-check-label" for="gridCheck5">
+                        Checkbox
+                      </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck6">
+                      <label class="form-check-label" for="gridCheck6">
+                        Checkbox
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <label for="Textarea">Comments</label>
+                <div class="Textarea m-0 p-2">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="Textarea"
+                    style="height: 100px"></textarea>
+                </div>
+              </fieldset>
+              <div class="btn mx-2 p-1">
+                <button type="reset" class="btn btn-secondary mx-1">Reset</button>
+                <button type="submit" class="btn btn-secondary">Registration</button>
+              </div>
+            </fieldset>
           </form>
         </div>
       </div>
@@ -329,7 +385,7 @@
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
       </ul>
-      <p class="text-center text-muted">© 2022 Company, Inc</p>
+      <p class="text-center text-muted">© 2022 Viktor Blaha</p>
     </div>
   </footer>
 
