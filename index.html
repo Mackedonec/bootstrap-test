@@ -364,10 +364,16 @@
         <div class="col-xxl-3 col-xl-5 col-lg-6 bg-dark p-3 my-3" style="--bs-bg-opacity: .35;">
 
           <h2 class="mx-2 p-1">Modal button</h2>
-          <button type="button" class="btn btn-secondary mx-2 my-3" data-bs-toggle="modal"
-            data-bs-target="#exampleModal">
-            Sing in
-          </button>
+          <div>
+            <button type="button" class="btn btn-secondary mx-2 my-3" data-bs-toggle="modal"
+              data-bs-target="#exampleModal1">
+              Sing in
+            </button>
+            <button type="button" class="btn btn-secondary mx-2 my-3" data-bs-toggle="modal"
+              data-bs-target="#exampleModal">
+              Launch demo modal
+            </button>
+          </div>
 
           <form action="https://tests.fomenko.top/echo/index.php" method="get">
 
@@ -467,13 +473,6 @@
                   </div>
                 </div>
               </fieldset>
-              <fieldset>
-                <label for="Textarea2" class="m-2 px-2">About you</label>
-                <div class="form m-0 p-2">
-                  <textarea class="form-control" placeholder="Leave a massage here" id="Textarea2"
-                    style="height: 200px"></textarea>
-                </div>
-              </fieldset>
               <div class="mx-2 p-1">
                 <button type="reset" class="btn btn-secondary mx-1">Reset</button>
                 <button type="submit" class="btn btn-secondary">Registration</button>
@@ -506,7 +505,45 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body bg-black text-light">
+
           <form action="https://tests.fomenko.top/echo/index.php" method="get">
+
+            <fieldset class="border border-secondary p-1">
+              <div class="row mx-1 mb-3">
+                <label for="inputName" class="col-form-label">Name</label>
+                <div class="col-6">
+                  <input type="text" class="form-control" id="inputName" placeholder="Name">
+                </div>
+              </div>
+              <fieldset>
+                <label for="Textarea2" class="m-2 px-2">Send massage</label>
+                <div class="form m-0 p-2">
+                  <textarea class="form-control" placeholder="Leave a massage here" id="Textarea2"
+                    style="height: 200px"></textarea>
+                </div>
+              </fieldset>
+            </fieldset>
+            <div class="mx-2 p-1">
+              <button type="reset" class="btn btn-secondary mx-1">Reset</button>
+              <button type="submit" class="btn btn-secondary">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-secondary">
+          <h1 class="modal-title fs-5" id="exampleModalLabel1">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-black text-light">
+
+          <form action="https://tests.fomenko.top/echo/index.php" method="get">
+
             <fieldset class="border border-secondary p-1">
               <div class="row mx-1 mb-3">
                 <label for="inputLogin" class="col-form-label">Login</label>
@@ -520,14 +557,13 @@
                   <input type="password" class="form-control" id="inputPassword" placeholder="Password">
                 </div>
               </div>
-              <div class="mx-2 p-1">
-                <button type="reset" class="btn btn-secondary mx-1">Reset</button>
-                <button type="submit" class="btn btn-secondary">Sing in</button>
-              </div>
             </fieldset>
+            <div class="mx-2 p-1">
+              <button type="reset" class="btn btn-secondary mx-1">Reset</button>
+              <button type="submit" class="btn btn-secondary">Sing in</button>
+            </div>
           </form>
         </div>
-
       </div>
     </div>
   </div>
